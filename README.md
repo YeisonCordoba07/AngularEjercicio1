@@ -5,6 +5,17 @@
 
 ![image](https://github.com/YeisonCordoba07/AngularEjercicio1/assets/41711172/e7e09e35-419c-45f8-a819-ada6c8d3c97d)
 
+---
+# Temas
+- Estructura de los componentes
+- Propiedades
+- @if
+- @for
+- Input()
+- Output()
+- EventEmitter<>()
+
+  
 ----
 
 # Angular Ejercicio 1
