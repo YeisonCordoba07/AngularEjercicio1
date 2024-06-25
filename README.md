@@ -1,10 +1,11 @@
 # Resultado
 
-![image](https://github.com/YeisonCordoba07/AngularEjercicio1/assets/41711172/ead1b67a-9dd1-418c-bd65-32307dd74416)
+![image](https://github.com/YeisonCordoba07/AngularEjercicio1/assets/41711172/4870c845-4d06-4970-bf0f-136a8b5b7c43)
+
 
 ![image](https://github.com/YeisonCordoba07/AngularEjercicio1/assets/41711172/e7e09e35-419c-45f8-a819-ada6c8d3c97d)
 
-
+----
 
 # Angular17App
 
