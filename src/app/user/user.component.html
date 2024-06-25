@@ -12,20 +12,22 @@
         placeholder="Enter your username"
         (keyup)="updateUserName($event)"
     />
+
+    <h4>Tus juegos</h4>
+
+    <!-- addFavoriteGameEvent le manda a setFavoriteGame el nombre del juego que recibió emitFav-->
+    <app-games
+      (addFavoriteGameEvent)="setFavoriteGame($event)"
+      username="{{ username }}"
+    >
+    </app-games>
+  
+    @if(favGame !== ""){
+      <p>Tu juego favorito es {{ favGame }}</p>
+    }
   }@else {
     <button (click)="isLoggedIn = true">Iniciar sesión</button>
   }
 
-  <h4>Tus juegos</h4>
 
-  <!-- addFavoriteGameEvent le manda a setFavoriteGame el nombre del juego que recibió emitFav-->
-  <app-games
-    (addFavoriteGameEvent)="setFavoriteGame($event)"
-    username="{{ username }}"
-  >
-  </app-games>
-
-  @if(favGame !== ""){
-    <p>Tu juego favorito es {{ favGame }}</p>
-  }
 </section>

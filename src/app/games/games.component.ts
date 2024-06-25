@@ -20,6 +20,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   span{
     color: tomato;
   }
+
+  li:hover{
+    color:goldenrod;
+    scale: 1.1;
+  }
   `,
 })
 export class GamesComponent {
