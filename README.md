@@ -14,6 +14,7 @@
 - Input()
 - Output()
 - EventEmitter<>()
+- Obtener un valor con un input text
 
   
 ----
