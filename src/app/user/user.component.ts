@@ -9,14 +9,23 @@ import { GamesComponent } from '../games/games.component';
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-    username = "Yeison";
+    username = "";
+
     isLoggedIn = true;
-    saludos(){
-        alert("saludo");
-    };
+    
     favGame = "";
 
-    getFavorite(gameName: string){
+    setFavoriteGame(gameName: string){
         this.favGame = gameName;
+    }
+
+    updateUserName(p:Event){
+        /*const inputElement = p.target as HTMLInputElement;*/
+        if((p.target as HTMLInputElement).value !== ""){
+
+            this.username = (p.target as HTMLInputElement).value;
+        }else{
+            this.username = "N/A";
+        }
     }
 }

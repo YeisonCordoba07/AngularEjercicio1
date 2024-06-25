@@ -1,23 +1,31 @@
 <section>
+
   @if(isLoggedIn){
-  <span>Bienvenido {{ username }}</span>
-  <img
-    alt="foto"
-    src="https://github.com/YeisonCordoba07.png"
-    (click)="isLoggedIn = false"
-  />
+    <h2>Bienvenido <span>{{ username }}</span></h2>
+    <img
+        alt="foto"
+        src="https://github.com/YeisonCordoba07.png"
+        (click)="isLoggedIn = false"
+    />
+    <input
+        type="text"
+        placeholder="Enter your username"
+        (keyup)="updateUserName($event)"
+    />
   }@else {
-  <p (click)="isLoggedIn = true">Inicie sesión</p>
+    <button (click)="isLoggedIn = true">Iniciar sesión</button>
   }
 
   <h4>Tus juegos</h4>
+
+  <!-- addFavoriteGameEvent le manda a setFavoriteGame el nombre del juego que recibió emitFav-->
   <app-games
-    (addFavoriteGameEvent)="getFavorite($event)"
+    (addFavoriteGameEvent)="setFavoriteGame($event)"
     username="{{ username }}"
   >
   </app-games>
 
   @if(favGame !== ""){
-    <p>Tu juego favorito es {{favGame}}</p>
+    <p>Tu juego favorito es {{ favGame }}</p>
   }
 </section>
