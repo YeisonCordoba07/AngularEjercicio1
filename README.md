@@ -1,3 +1,11 @@
+# Resultado
+
+![image](https://github.com/YeisonCordoba07/AngularEjercicio1/assets/41711172/ead1b67a-9dd1-418c-bd65-32307dd74416)
+
+![image](https://github.com/YeisonCordoba07/AngularEjercicio1/assets/41711172/e7e09e35-419c-45f8-a819-ada6c8d3c97d)
+
+
+
 # Angular17App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
